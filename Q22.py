@@ -1,5 +1,5 @@
 '''
-Using names.txt, a text file containing over five-thousand first names, 
+Using names.txt, a text file containing over five-thousand first names, formatted as "NAME","NAME2",..."N"
 begin by sorting it into alphabetical order. 
 Then working out the alphabetical value for each name, 
 multiply this value by its alphabetical position in the list to obtain a name score.
