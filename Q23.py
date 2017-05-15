@@ -1,14 +1,18 @@
+'''
+Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
+'''
+
 def main():
     abundant = AbundantNum()
     i = 0
-    AbunSum = 0
     j = len(abundant) - 1
+    AbunSum = 0
     for x in range(1,28123):
         if x < 24:
             AbunSum += x
         else:
             flag = True
-            while i <= j:
+            while i <= j and flag: ##not very efficient search TODO
                 num = abundant[i] + abundant[j]
                 if num == x:
                     flag = False
@@ -25,12 +29,11 @@ def main():
 def AbundantNum():
     tmplist = []
     tmpnum = 0
-    for x in range (11,28123):
+    for x in range (12,28123):
         tmpnum = sum(factors(x)) - x
         if tmpnum > x:
             tmplist.append(x)
     return tmplist
-
 
 def factors(n):    
     return set(reduce(list.__add__, 
