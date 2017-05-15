@@ -1,2 +1,3 @@
 # projecteuler
-This is a resoprosity containing my answers to project euler questions. Written in Python, Java and sometimes C. 
+This is a resoprosity containing my answers to project euler questions, written in Python 2.7. 
+See projecteuler.net
